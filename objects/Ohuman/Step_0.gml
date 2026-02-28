@@ -3,7 +3,7 @@ yvelocity += 0.05; // gravedad
 velocitywalk = 1.5;
 
 // Saltar solo si está en el suelo
-if (place_meeting(x, y + 1, Ograss)) {
+if (place_meeting(x, y + 1, Ograss) || place_meeting(x, y + 1, Orocks)) {
     if (keyboard_check_pressed(vk_up)) {
         yvelocity = -2;
 		 
@@ -27,7 +27,7 @@ else if (keyboard_check(vk_left)) {
     xvelocity = -0.8;
 }
 
-move_and_collide(xvelocity, yvelocity, Ograss)
+move_and_collide(xvelocity, yvelocity, Ograss, Orocks)
 
 // Movimiento y colisión
-move_and_collide(xvelocity, yvelocity, Ograss);
+move_and_collide(xvelocity, yvelocity, Ograss, Orocks);

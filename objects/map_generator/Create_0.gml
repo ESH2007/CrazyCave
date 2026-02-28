@@ -7,7 +7,7 @@ map_height = 50;
 fill_percent = 0.45;
 iterations = 5;
 
-cell_size = 12;
+cell_size = 10;
 
 // Crear grid lógico
 grid = ds_grid_create(map_width, map_height);
