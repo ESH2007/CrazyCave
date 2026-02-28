@@ -10,6 +10,7 @@
   },
   "defaultScriptType":0,
   "Folders":[
+    {"$GMFolder":"","%Name":"UI","folderPath":"folders/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"mapGenerator","folderPath":"folders/mapGenerator.yy","name":"mapGenerator","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objeto","folderPath":"folders/Objeto.yy","name":"Objeto","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites mapa","folderPath":"folders/Sprites mapa.yy","name":"Sprites mapa","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -25,11 +26,14 @@
   "resources":[
     {"id":{"name":"Jugador","path":"objects/Jugador/Jugador.yy",},},
     {"id":{"name":"map_generator","path":"objects/map_generator/map_generator.yy",},},
+    {"id":{"name":"UI","path":"objects/UI/UI.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"connect_regions","path":"scripts/connect_regions/connect_regions.yy",},},
     {"id":{"name":"count_neighbors","path":"scripts/count_neighbors/count_neighbors.yy",},},
+    {"id":{"name":"draw_buttonUI","path":"scripts/draw_buttonUI/draw_buttonUI.yy",},},
     {"id":{"name":"generate_tiles","path":"scripts/generate_tiles/generate_tiles.yy",},},
     {"id":{"name":"get_regions","path":"scripts/get_regions/get_regions.yy",},},
+    {"id":{"name":"place_rocks","path":"scripts/place_rocks/place_rocks.yy",},},
     {"id":{"name":"smooth_map","path":"scripts/smooth_map/smooth_map.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"tilesMapa","path":"tilesets/tilesMapa/tilesMapa.yy",},},

@@ -8,7 +8,9 @@ function generate_tiles(_grid) {
             var tile_index;
 
             if (_grid[# x, y] == 1) {
-                tile_index = 49; // tile pared
+                tile_index = 114; // tile pared
+            } else if (_grid[# x, y] == 2) {
+                tile_index = 54; // tile roca
             } else {
                 tile_index = 5; // tile piso
             }
