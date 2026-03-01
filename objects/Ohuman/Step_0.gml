@@ -66,6 +66,7 @@ if (instance_place(x, y, Ofire)) {
 if (place_meeting(x, y + 1, Ograss) || place_meeting(x, y + 1, Orocks)) {
     if (keyboard_check_pressed(vk_up)) {
         yvelocity = -velocityjump;
+		audio_play_sound(jumpsound, 1, false);
     } else {
         yvelocity = 0;
     }
@@ -119,7 +120,9 @@ if (in_water) {
         hp = max(0, hp - 5);
         water_damage_timer = 0;
         if (hp <= 0) {
+			audio_play_sound(gameover, 1, false);
             room_restart();
+			
         }
     }
 } else {
@@ -129,6 +132,7 @@ if (in_water) {
 // Reiniciar el juego si se sale de los límites
 if (y > room_height) {
     room_restart();
+	audio_play_sound(gameover, 1, false);
 }
 
 // ===== MOVIMIENTO HORIZONTAL =====
